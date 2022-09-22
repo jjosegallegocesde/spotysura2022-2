@@ -11,9 +11,9 @@ buscar.addEventListener("click",function(evento){
         headers:{Authorization:TOKEN},
     }
     fetch(URI,PETICION)
-.then(function(respuesta){
+    .then(function(respuesta){
     return respuesta.json() //garantizo formato JSON
-})
+    })
 .then(function(respuesta){
     console.log(respuesta) //Hago lo que quiera con respuesta
     console.log(respuesta.tracks) //accedo a un atributo de la respuesta
